@@ -81,4 +81,4 @@ The frontend is developed using **Angular 16+** and provides a user-friendly int
 
 To test the API endpoints, you can use the following **Postman collection** link. It contains all the necessary requests for interacting with the backend, including authentication, movie management, and more.
 
-- **Postman Collection**: [Movie Management API Collection](https://evalution-api.postman.co/workspace/My-Workspace~a7b4cf67-e8ec-42d6-8741-e2a0f1cec739/collection/40435877-e3567575-e895-478c-b6d6-e1d3f3b1352b?action=share&creator=40435877)
+- **Postman Collection**: [Movie Management API Collection]()

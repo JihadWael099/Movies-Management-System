@@ -8,7 +8,7 @@ This project is a **Movie Management** application built using **Spring Boot** f
 
 ##  Preview
 
-![App Screenshot](https://github.com/JihadWael099/Movies-App/blob/main/Screenshot%202025-04-12%20205217.png?raw=true)
+![App Screenshot](https://github.com/JihadWael099/Movies-Management-System/blob/main/20250518_220032-ezgif.com-video-to-gif-converter.gif)
 
 
 ## Features
@@ -45,13 +45,15 @@ The Spring Boot backend handles API endpoints for movie management, user authent
 
 ### Key Endpoints:
 
-1. **POST /api/auth/register**: Registers a new user.
-2. **POST /api/auth/login**: Logs in a user and returns a JWT token.
-3. **GET /api/v1/movies**: Retrieves a list of all movies.
-4. **GET /api/v1/movies/{id}**: Fetches a specific movie by ID.
-5. **POST /api/v1/movies/external/title**: Fetches movie details from the OMDB API based on the movie title.
-6. **POST /api/v1/movies**: Adds a new movie to the database (only accessible by admins).
-7. **DELETE /api/v1/movies/{id}**: Deletes a movie from the database (only accessible by admins).
+1. **POST /api/auth/register**: **Registers a new user.**  
+2. **POST /api/auth/login**: **Logs in a user and returns a JWT token.**  
+3. **GET /api/v1/movies**: **Retrieves a paginated list of all movies.**  
+4. **GET /api/v1/movies/id?id={movieId}**: **Fetches a specific movie by ID using a query parameter.**  
+5. **GET /api/v1/movies/search?title={title}**: **Searches for movies by title.**  
+6. **POST /api/v1/movies/add**: **Adds a new movie to the database (only accessible by admins).**  
+7. **DELETE /api/v1/movies/{id}**: **Deletes a movie from the database (only accessible by admins).**  
+8. **POST /api/v1/movies/batch-add**: **Adds a list of movies in bulk (only accessible by admins).**  
+9. **DELETE /api/v1/movies/batch-remove**: **Deletes multiple movie
 
 ### OMDB API Integration:
 - Admin users can search for movies using the **OMDB API** by providing the movie title, which returns movie details such as title, actors, ratings, etc.
@@ -80,14 +82,3 @@ The frontend is developed using **Angular 16+** and provides a user-friendly int
 To test the API endpoints, you can use the following **Postman collection** link. It contains all the necessary requests for interacting with the backend, including authentication, movie management, and more.
 
 - **Postman Collection**: [Movie Management API Collection](https://evalution-api.postman.co/workspace/My-Workspace~a7b4cf67-e8ec-42d6-8741-e2a0f1cec739/collection/40435877-e3567575-e895-478c-b6d6-e1d3f3b1352b?action=share&creator=40435877)
-
-Click the link above to access the collection. You can import it into your Postman application and start testing the API.
-
-
-## Getting Started
-
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/JihadWael099/Movies-App
-cd Movies-App
